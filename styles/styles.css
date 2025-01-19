@@ -21,9 +21,13 @@
   /* shared styles */
 
   .btn-primary{
-    color: #E02C6D;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-weight: 700;
     padding: 10px 24px;
     border-radius: 41px;
+    border: none;
+    outline: none;
   }
 
   .text-dark1-gray{
@@ -43,4 +47,138 @@
   .text-dark3{
     color: rgba(0, 0, 0, 0.87);
     font-size: 1.5rem;
+  }
+
+  /* nav-bar styles  */
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 130px;
+  }
+
+  .nav-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .nav-list{
+    display: flex;
+    list-style: none;
+    gap: 34px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .nav-list i{
+    font-size: 1.25rem;
+  }
+
+  /* banner styles added */
+
+  .banner{
+    padding: 0 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .banner-title{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 5px;
+  }
+
+  .banner-description{
+    max-width: 500px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  .banner-btn{
+    cursor: pointer;
+  }
+
+  .banner-btn i{
+    margin-left: 10px;
+  }
+
+
+  .banner-box .banner-img1{
+    position: absolute;
+  }
+
+  .banner-box .banner-img2{
+    position: relative;
+    top: 30px;
+  }
+
+  /* sponsor section styles added */
+
+  .sponsor{
+    max-width: 1110px;
+    padding: 36px 62px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 61px;
+  }
+
+  .sponsor-icon{
+
+  }
+
+  .sponsor-icon img{
+    width: 5.25rem;
+  }
+
+  /* card section styles added */
+
+  /* responsive media query added  */
+
+  @media screen and (max-width: 576px) {
+
+    ul{
+        flex-direction: column;
+        
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-box{
+        margin: 20px auto;
+    }
+    nav, .banner{
+        padding: 0 0;
+    }
+    .banner-text-box{
+        margin: 50px 0;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 1.8rem;
+        line-height: 50px;
+    }
+    .banner-img1{
+        width: 257px;
+    }
+    .banner-img2{
+        width: 200px;
+        margin-left: 30px;
+    }
+    .banner-description{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .sponsor{
+        padding: 0;
+        margin: 0 auto;
+        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+    .sponsor img{
+        width: 3.5rem;
+    }
   }
