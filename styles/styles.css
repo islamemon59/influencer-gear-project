@@ -175,6 +175,44 @@
     margin-left: 10px;
   }
 
+  /* feature section styles added */
+
+  .feature{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 95px;
+  }
+
+  .feature-title{
+    width: 100%;
+    line-height: 1.75rem;
+    font-size: 2.38rem;
+    font-weight: 700;
+    color: #0A0826;
+  }
+
+  .feature-description{
+    max-width: 500px;
+    color: #6C6C6C;
+    line-height: 1.75rem;
+    font-weight: 700;
+  }
+
+  .join-btn{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    outline: none;
+  }
+
+  .join-btn i{
+    margin-left: 10px;
+  }
+
   /* responsive media query added  */
 
   @media screen and (max-width: 576px) {
@@ -225,5 +263,16 @@
     .card{
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+
+    .feature, img{
+        margin-top: -40px;
+        flex-direction: column-reverse;
+        text-align:  center;
+    }
+
+    .feature-title{
+        font-size: 1.6rem;
+        font-weight: 700;
     }
   }
