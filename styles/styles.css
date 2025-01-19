@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.inter-uniquifier {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* shared styles */
+
+  .btn-primary{
+    color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+  }
+
+  .text-dark1-gray{
+    color: #3A3A3A;
+  }
+
+  .text-light-gray{
+    color: #787885;
+  }
+
+  .text-dark2-gray{
+    color: #18191F;
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+
+  .text-dark3{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+  }
