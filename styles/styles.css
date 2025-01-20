@@ -3,7 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
+body{
+  margin: 0 auto;
+}
 
 .inter-uniquifier {
   font-family: "Inter", serif;
@@ -125,10 +127,6 @@
     gap: 61px;
   }
 
-  .sponsor-icon{
-
-  }
-
   .sponsor-icon img{
     width: 5.25rem;
   }
@@ -154,6 +152,7 @@
 
   .card-box{
     padding: 17px 15px;
+    line-height: 20px;
     max-width: 330px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -213,14 +212,61 @@
     margin-left: 10px;
   }
 
+  /* footer styles added  */
+
+  .footer{
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #0A0826;
+    color: #FFFFFF;
+    line-height: 20px;
+  }
+
+  .footer-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  .symbol-text{
+    color: #D9DBE1;
+  }
+
+  .reserved-text{
+    font-size: 0.8rem;
+    color: #D9DBE1;
+  }
+
+  .icon-box i{
+    padding: 10px;
+    letter-spacing: 20px;
+  }
+
   /* responsive media query added  */
 
   @media screen and (max-width: 576px) {
 
-    ul{
-        flex-direction: column;
-        
+    .nav-title{
+      font-size: 1.5rem;
+      font-weight: 600;
     }
+
+    nav{
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .nav-list{
+      display: flex;
+      list-style: none;
+      font-size: 0.8rem;
+      gap: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      justify-items: center;
+    }
+
     .banner{
         flex-direction: column-reverse;
     }
@@ -250,14 +296,14 @@
         font-weight: 400;
     }
     .sponsor{
-        padding: 0;
-        margin: 0 auto;
-        gap: 30px;
+        padding: 0 20px;
+        margin: 50px auto;
+        gap: 50px;
         grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
     }
     .sponsor img{
         width: 3.5rem;
+        justify-items: center;
     }
 
     .card{
@@ -266,13 +312,93 @@
     }
 
     .feature, img{
-        margin-top: -40px;
+        margin-top: -0px;
         flex-direction: column-reverse;
         text-align:  center;
     }
 
+    .feature img{
+      width: 300px;
+      margin-left: 50px;
+    }
+
     .feature-title{
-        font-size: 1.6rem;
-        font-weight: 700;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .footer{
+      padding: 50px;
+      max-width: 360px;
+      max-height: 210px;
+      flex-direction: column;
+      line-height: 15px;
+    }
+    .footer-title{
+    font-size: 16px;
+    }
+    .symbol-text, 
+    .reserved-text{
+    font-size: 12px;
+    }
+  }
+  .icon-box i{
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 992px) {
+    
+    nav, .banner{
+      padding: 20 0;
+    }
+    .nav-title{
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 40px;
+    }
+
+    .banner-box .banner-img1, 
+    .banner-box .banner-img2{
+      width: 300px;
+    }
+
+    .banner-box .banner-img2{
+      margin-top: -20px;
+    }
+
+    .nav-list{
+      display: flex;
+      align-items: center;
+      list-style: none;
+      font-size: 0.8rem;
+      gap: 18px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .banner-title{
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 70px;
+      margin-bottom: 5px;
+    }
+
+    .sponsor{
+      padding: 0 20px;
+      margin: 50px auto;
+      gap: 50px;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+  }
+
+    .sponsor img{
+      width: 5rem;
+      justify-items: center;
+  }
+    
+    .footer{
+      width: 1040px;
+      line-height: 15px;
     }
   }
